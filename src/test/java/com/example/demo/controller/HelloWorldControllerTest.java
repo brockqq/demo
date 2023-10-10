@@ -15,8 +15,7 @@ class HelloWorldControllerTest {
 		HelloWorldService service =Mockito.mock(HelloWorldService.class);
 		Mockito.when(service.getTestString(Mockito.anyString())).thenReturn("123");
 		String check = service.getTestString("123");
-		assertEquals("123", check);		
-		service.中文方法();
+		assertEquals("123", check);				
 	}
 //問題 場景
 }
